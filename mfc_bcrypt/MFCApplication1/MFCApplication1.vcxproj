@@ -184,7 +184,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Base64.h" />
-    <ClInclude Include="CAES.h" />
     <ClInclude Include="CMD5.h" />
     <ClInclude Include="CSHA256.h" />
     <ClInclude Include="framework.h" />
@@ -196,7 +195,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base64.cpp" />
-    <ClCompile Include="CAES.cpp" />
     <ClCompile Include="CMD5.cpp" />
     <ClCompile Include="CSHA256.cpp" />
     <ClCompile Include="MFCApplication1.cpp" />

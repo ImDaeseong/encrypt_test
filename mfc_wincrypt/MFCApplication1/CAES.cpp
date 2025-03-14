@@ -119,6 +119,7 @@ std::string CAES::EncryptText(const std::string& text)
 
     // Base64 encode the result
     std::string result = Base64Encode(combined);
+    //std::string result = Base64::Encode(combined);
 
     // Clean up
     CryptDestroyKey(hKey);
@@ -134,6 +135,7 @@ std::string CAES::DecryptText(const std::string& text)
     {
         // Base64 decode
         std::vector<BYTE> combined = Base64Decode(text);
+        //std::vector<BYTE> combined = Base64::Decode(text);
 
         // Extract IV and ciphertext
         if (combined.size() <= m_blockSize)

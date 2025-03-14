@@ -28,18 +28,20 @@
 
 #include <afxcontrolbars.h>     // MFC의 리본 및 컨트롤 막대 지원
 
-#include <string>
 #include <fstream>
-#include <vector>
+#include <Windows.h>
+#include <memory>
 #include <stdexcept>
+#include <string>
+#include <vector>
+#include <algorithm>
 
-#include <wincrypt.h>
-#pragma comment(lib, "Crypt32.lib")
+#include <bcrypt.h>
+#pragma comment(lib, "bcrypt.lib")
 
 #include "Base64.h"
 #include "CMD5.h"
 #include "CSHA256.h"
-#include "CAES.h"
 
 #ifdef _UNICODE
 #if defined _M_IX86
